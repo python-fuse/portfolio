@@ -1,0 +1,9 @@
+:root{
+    --main-text:rgb(0, 233, 31);
+    --sec-text: rgb(0, 255, 98)
+}
+
+*{
+    background-color: rgb(7, 4, 17);
+    color: var(--main-text);
+}

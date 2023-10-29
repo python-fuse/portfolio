@@ -1,0 +1,378 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0.3rem 1rem;
+}
+
+.nav {
+    display: flex;
+    font-size: 1.3rem;
+    gap: 1rem;
+}
+
+.nav a {
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav a::before {
+    position: absolute;
+    content: '';
+    border-radius: 1rem;
+    bottom: -2px;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background-color: var(--sec-text);
+    transition: all .3s ease;
+}
+
+.nav a:hover::before {
+    width: 100%;
+
+}
+
+.nav a:hover,
+.nav a:active {
+    text-shadow: 0 0 3px var(--sec-text);
+}
+
+.header>h1 {
+    font-family: cursive;
+    text-shadow: 0 0 3px var(--sec-text);
+}
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem 0 7rem;
+    flex-direction: row-reverse;
+    font-size: 3rem;
+}
+
+.image-container,
+.image-container>img {
+    width: 500px;
+    border-radius: 50%;
+}
+
+.hero-section p,
+h3 {
+    color: white;
+    font-family: Poppins;
+}
+
+.hero-section>span {
+    color: var(--sec-text);
+}
+
+#hello>span {
+    color: var(--main-text);
+    font-family: raleway;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+}
+
+.download {
+    display: flex;
+    font-size: 1.2rem;
+    gap: 1rem;
+}
+
+.download>.btn {
+    padding: .7rem;
+    background-color: var(--main-text);
+    width: 10rem;
+    height: 3rem;
+    border-radius: 3rem;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: all .3s ease;
+    border: 2px solid var(--main-text);
+}
+
+.contact button:hover,
+.download>.btn:hover {
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+}
+
+.contact button:hover {
+    background-color: rgba(255, 255, 255, 0.158);
+}
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.about-section img {
+    width: 500px;
+    border-radius: 8rem;
+    transition: all .3s ease-in-out;
+}
+
+.about-section img:hover {
+    border-radius: 50%;
+}
+
+.section {
+    color: white;
+    font-size: 3rem;
+    font-family: raleway;
+    margin-bottom: 2rem;
+}
+
+.section span {
+    color: var(--main-text);
+}
+
+.about-info p {
+    color: var(--sec-text);
+}
+
+.about-section .details {
+    margin-top: 5rem;
+    font-size: 1.2rem;
+}
+
+.services-section {
+    margin-top: 10rem;
+}
+
+.services-section h2 {
+    font-size: 3rem;
+    font-family: raleway;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.services-section .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 2rem;
+}
+
+.card {
+    padding: 10px;
+    border-radius: 2rem;
+    background-color: rgb(14, 9, 32);
+    height: 200px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    transition: all .3s ease;
+}
+
+.card p {
+    background-color: transparent;
+}
+
+.card img {
+    width: 100px;
+    border-radius: 1rem;
+}
+
+.card:hover {
+    box-shadow: 0 0 .5rem .2rem var(--sec-text);
+    transform: translateY(-0.5rem);
+}
+
+.portfolio-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+.skill {
+    display: flex;
+    background-color: transparent;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.skill-name {
+    width: 30%;
+    background-color: transparent;
+    text-align: center;
+}
+
+.skill-lvl {
+    border-radius: .9rem;
+    height: 1.5rem;
+    flex: 1;
+    text-align: center;
+    position: relative;
+    color: white;
+    z-index: 2;
+    font-size: 1rem;
+}
+
+.skill-lvl::before {
+    content: '';
+    position: absolute;
+    border-radius: .9rem;
+    left: 0;
+    height: 100%;
+    background-color: var(--main-text);
+    z-index: -1;
+}
+
+.skill-container {
+    border: 2px solid var(--main-text);
+    width: 80%;
+    border-radius: 1rem;
+    background-color: rgb(14, 9, 32);
+    padding: 1rem;
+}
+
+.HTML::before {
+    width: 98%;
+}
+
+.CSS::before {
+    width: 90%;
+}
+
+.Javascript::before {
+    width: 70%;
+}
+
+.Python::before {
+    width: 85%;
+}
+
+.Dart::before {
+    width: 70%;
+}
+
+.React::before {
+    width: 70%;
+}
+
+.Flutter::before {
+    width: 50%;
+}
+
+.testimonial-section {
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.review-card img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.review-card p {
+    text-align: center;
+    font-size: small;
+
+}
+
+#span {
+    color: var(--main-text)
+}
+
+.review-card {
+    width: 300px;
+}
+
+.contact-section {
+    display: flex;
+    margin-top: 10rem;
+}
+
+.contact-section h2 {
+    font-family: RALEWAY;
+}
+
+.adress {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    height: 200px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.top,
+.bottom {
+    display: flex;
+    gap: 1rem;
+}
+
+textarea,
+.contact input {
+    padding: 1rem;
+    border-radius: 1rem;
+    outline: none;
+    border-style: solid;
+    transition: all .3s ease;
+    cursor: text;
+    border: 2px solid var(--sec-text) ;
+}
+textarea:invalid,
+.contact input:invalid{
+    border: 2px solid rgba(255, 29, 29, 0.952);
+}
+textarea:focus,
+.contact input:focus {
+    border: 2px solid white;
+}
+
+.contact button {
+    border-radius: 1rem;
+    padding: .3rem;
+    font-size: larger;
+    width: 200px;
+    border: 2px solid var(--main-text);
+    transition: all .3s ease;
+}
+footer{
+    margin: 0;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 1px solid var(--main-text);
+    padding: 1rem;
+}
+.links,.copy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
